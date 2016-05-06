@@ -111,5 +111,11 @@ public class TestRoman {
 		romanNumber = new RomanNumber("CXLVIII");
 		assertEquals(romanNumber.transform(), 148);
 	}
+	
+	@org.junit.Test
+	public void theNumberIsCCXXXIX(){
+		romanNumber = new RomanNumber("CCXXXIX");
+		assertEquals(romanNumber.transform(), 239);
+	}
 
 }
