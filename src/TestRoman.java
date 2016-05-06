@@ -69,5 +69,15 @@ public class TestRoman {
 		romanNumber = new RomanNumber("XXX");
 		assertEquals(romanNumber.transform(), 30);
 	}
+	@org.junit.Test
+	public void theNumberIsXL(){
+		romanNumber = new RomanNumber("XL");
+		assertEquals(romanNumber.transform(), 40);
+	}
+	@org.junit.Test
+	public void theNumberIsL(){
+		romanNumber = new RomanNumber("L");
+		assertEquals(romanNumber.transform(), 50);
+	}
 
 }
