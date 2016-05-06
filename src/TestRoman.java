@@ -123,5 +123,10 @@ public class TestRoman {
 		romanNumber = new RomanNumber("CCCXCIII");
 		assertEquals(romanNumber.transform(), 393);
 	}
+	@org.junit.Test
+	public void theNumberIsCDXXIII(){
+		romanNumber = new RomanNumber("CDXXIII");
+		assertEquals(romanNumber.transform(), 423);
+	}
 
 }
