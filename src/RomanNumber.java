@@ -10,7 +10,16 @@ public class RomanNumber {
 		int number = 0;
 		
 		for(int i = 0; i < this.roman.length(); i ++){
-			number += this.whatIsTheNumber(this.roman.charAt(i));
+			if(i + 1 < this.roman.length()){
+				if(this.whatIsTheNumber(this.roman.charAt(i + 1)) > this.whatIsTheNumber(this.roman.charAt(i))){
+					number -= this.whatIsTheNumber(this.roman.charAt(i));
+					
+				}else{
+					number += this.whatIsTheNumber(this.roman.charAt(i));
+				}
+			}else{
+				number += this.whatIsTheNumber(this.roman.charAt(i));
+			}
 		}
 		
 		return number;
