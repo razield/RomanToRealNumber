@@ -100,5 +100,10 @@ public class TestRoman {
 		romanNumber = new RomanNumber("XC");
 		assertEquals(romanNumber.transform(), 90);
 	}
+	@org.junit.Test
+	public void theNumberIsC(){
+		romanNumber = new RomanNumber("C");
+		assertEquals(romanNumber.transform(), 100);
+	}
 
 }
