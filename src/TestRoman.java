@@ -26,5 +26,10 @@ public class TestRoman {
 		romanNumber = new RomanNumber("IV");
 		assertEquals(romanNumber.transform(), 4);
 	}
+	@org.junit.Test
+	public void theNumberIsV(){
+		romanNumber = new RomanNumber("V");
+		assertEquals(romanNumber.transform(), 5);
+	}
 
 }
