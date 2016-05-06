@@ -31,5 +31,16 @@ public class TestRoman {
 		romanNumber = new RomanNumber("V");
 		assertEquals(romanNumber.transform(), 5);
 	}
+	
+	@org.junit.Test
+	public void theNumberIsVI(){
+		romanNumber = new RomanNumber("VI");
+		assertEquals(romanNumber.transform(), 6);
+	}
+	@org.junit.Test
+	public void theNumberIsVII(){
+		romanNumber = new RomanNumber("VII");
+		assertEquals(romanNumber.transform(), 7);
+	}
 
 }
